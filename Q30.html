@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question30</title>
+    <link rel="stylesheet" href="style30.css"/>
+   <script type="text/javascript">
+    let randomNo=Math.floor(Math.random()*1000)+1;
+    
+    function RemoveInput()
+    {
+        document.getElementById("GuessNumber").value="";
+    }
+    function check()
+    {
+        let value=parseInt(document.getElementById("GuessNumber").value);
+        if(value>1 && value<1000){
+                     if(value === randomNo)
+                     {
+                        alert("Congratulations!!!!Your Guess is  Right");
+                        randomNo=Math.floor(Math.random()*1000)+1;
+                        RemoveInput();
+                     }
+        else if(value<randomNo)
+        {
+            alert("Number is low");
+            RemoveInput();
+        }
+        else
+             alert("Number is high");
+             RemoveInput();
+
+    }
+}
+</script> 
+</head>   
+<body>
+    <div class="main">
+    <h1>GUESSING THE NUMBER</h1>
+    <br><br><br>
+    <label>ENTER A NUMBER</label><input type="number"id="GuessNumber" />
+    <br>
+    <br>
+    <br>
+    <button onclick="check()">Submit</button>
+</div>
+    
+
+</body>
+</html>

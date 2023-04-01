@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Mahadevi Singh's web page</title>
+	<head>
+	<body background="images/6.jpg ">
+		<a href="https://mail.google.com" target=_self>
+		GOOGLE
+		</a>
+		<a href="images/22.jpeg" target=_blank>
+		<img src=images/22.jpeg height=200 width=200 alt=image22 />
+		</a>
+		<a href="mailto: mmahadevisingh@gmail.com">
+		Mail us
+		</a>
+	</body>
+</html>
